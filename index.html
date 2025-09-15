@@ -33,38 +33,18 @@
         }
 
         .avatar {
-            width: 140px;
-            height: 120px;
-            border-radius: 12px;
-            background: #FF6B35;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
             margin: 0 auto 20px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-size: 36px;
+            color: white;
             border: 3px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .logo-text-main {
-            color: white;
-            font-size: 24px;
-            font-weight: 900;
-            font-family: 'Opus Pro', 'Arial Black', 'Helvetica', sans-serif;
-            letter-spacing: 1px;
-            margin-bottom: 2px;
-            text-transform: uppercase;
-        }
-
-        .logo-text-sub {
-            color: black;
-            font-size: 8px;
-            font-weight: 800;
-            font-family: 'Opus Pro', 'Arial Black', 'Helvetica', sans-serif;
-            letter-spacing: 0.8px;
-            text-transform: uppercase;
-            white-space: nowrap;
         }
 
         .title {
@@ -164,11 +144,11 @@
             color: white;
         }
 
-        .linkedin-icon {
-            background: #0077B5;
+        .survey-icon {
+            background: linear-gradient(135deg, #6c757d 0%, #FF6B35 100%);
             color: white;
         }
- 
+
         .footer {
             margin-top: 40px;
             color: rgba(255, 255, 255, 0.7);
@@ -188,20 +168,6 @@
                 padding: 16px 20px;
                 font-size: 15px;
             }
-
-            .avatar {
-                width: 120px;
-                height: 100px;
-            }
-
-            .logo-text-main {
-                font-size: 20px;
-            }
-
-            .logo-text-sub {
-                font-size: 7px;
-                letter-spacing: 0.5px;
-            }
         }
 
         /* Subtle animations */
@@ -215,6 +181,7 @@
         .link-button:nth-child(2) { animation-delay: 0.2s; }
         .link-button:nth-child(3) { animation-delay: 0.3s; }
         .link-button:nth-child(4) { animation-delay: 0.4s; }
+        .link-button:nth-child(5) { animation-delay: 0.5s; }
 
         @keyframes fadeInUp {
             to {
@@ -227,40 +194,37 @@
 <body>
     <div class="container">
         <div class="profile-section">
-            <div class="avatar">
-                <div class="logo-text-main">GEEVES</div>
-                <div class="logo-text-sub">SCAFFOLDING LTD</div>
-            </div>
+            <div class="avatar">🏢</div>
             <h1 class="title">Our Companies</h1>
             <p class="subtitle">Explore our family of businesses</p>
         </div>
 
         <div class="links-container">
-    <a href="https://www.linkedin.com/company/geeves-scaffolding/" class="link-button" target="_blank">
-        <div class="icon linkedin-icon">in</div>
-        <span>Follow Us on LinkedIn</span>
-    </a>
+            <a href="https://www.geeves.co.nz/" class="link-button" target="_blank">
+                <div class="icon geeves-icon">G</div>
+                <span>Geeves Scaffolding</span>
+            </a>
 
-    <a href="https://www.geeves.co.nz/" class="link-button" target="_blank">
-        <div class="icon geeves-icon">G</div>
-        <span>Geeves Scaffolding</span>
-    </a>
+            <a href="https://www.formshore.co.nz/" class="link-button" target="_blank">
+                <div class="icon formshore-icon">F</div>
+                <span>Formshore</span>
+            </a>
 
-    <a href="https://www.formshore.co.nz/" class="link-button" target="_blank">
-        <div class="icon formshore-icon">F</div>
-        <span>Formshore</span>
-    </a>
+            <a href="https://www.twconsulting.co.nz/" class="link-button" target="_blank">
+                <div class="icon twc-icon">T</div>
+                <span>TWC (Temporary Works Consulting)</span>
+            </a>
 
-    <a href="https://www.twconsulting.co.nz/" class="link-button" target="_blank">
-        <div class="icon twc-icon">T</div>
-        <span>TWC (Temporary Works Consulting)</span>
-    </a>
+            <a href="https://nzsgroup.co.nz/" class="link-button" target="_blank">
+                <div class="icon nzs-icon">N</div>
+                <span>NZS Group</span>
+            </a>
 
-    <a href="https://nzsgroup.co.nz/" class="link-button" target="_blank">
-        <div class="icon nzs-icon">N</div>
-        <span>NZS Group</span>
-    </a>
-</div>
+            <a href="https://www.surveymonkey.com/r/NZIQS_Survey" class="link-button" target="_blank">
+                <div class="icon survey-icon">S</div>
+                <span>Take Our Survey</span>
+            </a>
+        </div>
 
         <div class="footer">
             <p>© 2025 All Rights Reserved</p>
@@ -268,6 +232,3 @@
     </div>
 </body>
 </html>
-
-
-
